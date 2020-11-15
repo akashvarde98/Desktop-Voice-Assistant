@@ -1,0 +1,46 @@
+Speech Recognition is an important feature in several applications used such as home automation, artificial intelligence, etc. Recognizing speech needs audio input, and SpeechRecognition makes it really simple to retrieve this input. Instead of building scripts from scratch to access microphones and process audio files, SpeechRecognition will have you up and running in just a few minutes.
+
+To access your microphone with SpeechRecognizer, you’ll have to install the PyAudio package
+
+In general voice assistants react to voice commands and give the user relevant information about his inquiry. Presently voice assistants are already able to process orders of products, answer questions, perform actions like playing music or start a simple phone call with a friend.
+
+ 
+
+The basics of the technology currently exist and the next few years will be used to develop these artificially intelligent assistants even further, enabling them to have more complex capabilities.
+
+ 
+
+The long-term vision for voice assistants is to act as a smart bridge between humans and the vast knowledge and capacities which the internet delivers. Taking away the need to use any device or screen to interact with the internet, technology or other humans in different locations. Soon we’ll be able to do it all with our voices only.
+
+ 
+
+Conculsion:
+
+The importance of “voice” is undeniable. For this very reason, companies are already figuring out the best ways to make use of voice assistants and integrating them into their marketing and customer services.
+
+ 
+
+To be on top of the game, it is especially important to focus on the new ways customers might interact with voice-enabled machines and develop strategies accordingly.
+
+ 
+
+Being able to engage customers on a conversational level is going to open up entirely new ways of brand to customer interactions. Voice still has a long way to go, but it has always been the primary way of human communication. Including machines in this way of interacting holds many exciting potentials.
+
+
+
+overview:
+
+Before we get to the nitty-gritty of doing speech recognition in Python, let’s take a moment to talk about how speech recognition works. A full discussion would fill a book, so I won’t bore you with all of the technical details here. In fact, this section is not pre-requisite to the rest of the tutorial. If you’d like to get straight to the point, then feel free to skip ahead.
+
+Speech recognition has its roots in research done at Bell Labs in the early 1950s. Early systems were limited to a single speaker and had limited vocabularies of about a dozen words. Modern speech recognition systems have come a long way since their ancient counterparts. They can recognize speech from multiple speakers and have enormous vocabularies in numerous languages.
+
+The first component of speech recognition is, of course, speech. Speech must be converted from physical sound to an electrical signal with a microphone, and then to digital data with an analog-to-digital converter. Once digitized, several models can be used to transcribe the audio to text.
+
+Most modern speech recognition systems rely on what is known as a Hidden Markov Model (HMM). This approach works on the assumption that a speech signal, when viewed on a short enough timescale (say, ten milliseconds), can be reasonably approximated as a stationary process—that is, a process in which statistical properties do not change over time.
+
+
+To decode the speech into text, groups of vectors are matched to one or more phonemes—a fundamental unit of speech. This calculation requires training, since the sound of a phoneme varies from speaker to speaker, and even varies from one utterance to another by the same speaker. A special algorithm is then applied to determine the most likely word (or words) that produce the given sequence of phonemes.
+
+One can imagine that this whole process may be computationally expensive. In many modern speech recognition systems, neural networks are used to simplify the speech signal using techniques for feature transformation and dimensionality reduction before HMM recognition. Voice activity detectors (VADs) are also used to reduce an audio signal to only the portions that are likely to contain speech. This prevents the recognizer from wasting time analyzing unnecessary parts of the signal.
+
+Fortunately, as a Python programmer, you don’t have to worry about any of this. A number of speech recognition services are available for use online through an API, and many of these services offer Python SDKs.
